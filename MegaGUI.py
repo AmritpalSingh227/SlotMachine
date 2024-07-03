@@ -1,23 +1,15 @@
 import tkinter as tk
 from tkinter import messagebox
 import random
-import time
+import pyttsx3
 
-
-
-h = int(time.strftime('%H'))
-y = int(time.strftime('%M'))
-z = int(time.strftime('%S'))
-
-print("time now is ", h, ":", y, ":", z)
-
-if h < 12:
-  print("Good morning")
-elif h > 12:
-  print("Good afternoon")
-else:
-  print("Good evening")
-
+engine = pyttsx3.init()
+engine.say("NIGGA WELCOME TO SLOT MACHINE")
+engine.runAndWait()
+'''RATE'''
+rate = engine.getProperty
+print(rate)
+engine.setProperty('rate', 99)
 
   
 # Constants
